@@ -7,17 +7,25 @@ function App() {
 
   useEffect(() => {
     getAllPokemons()
-    // getPokemon()
+    for(let i = 1; i <= allPokemons.length; i++){
+      getPokemon(i)
+    }    
   }, [])
 
   async function getAllPokemons() {
-    const { data } = await api.get()
-    setAllPokemons(data)
+    let { data } = await api.get()
+    let dataReaults = data.results
+    setAllPokemons(dataReaults)
+  }
+
+  async function getPokemon(elements){
+    let { data } = await api.get(`${elements}`)
+    setPokemon(data)
   }
 
   return (
     <Fragment>
-
+        {}
     </Fragment>
   )
 
