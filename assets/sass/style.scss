@@ -1,1 +1,12 @@
 @import '../../node_modules/bulma/css/bulma-rtl.min.css';
+
+.navbar{
+    background:transparent!important;
+    
+    .navbar-item:hover{
+        background:inherit;
+    }
+    .navbar-item.has-dropdown:hover .navbar-link{
+        background:transparent!important;
+    }
+}
