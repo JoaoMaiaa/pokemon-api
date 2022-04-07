@@ -42,65 +42,65 @@ function App() {
     <Fragment>
       <nav class="navbar is-fixed-top">
         <div className="container">
-        
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"/>
-          </a>
 
-          <a role="button" className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" className=" navbar-menu">
-          <div className="navbar-start">
-            <a className="navbar-item has-text-light">
-              Home
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
             </a>
 
-            <a className="navbar-item has-text-light">
-              Documentation
+            <a role="button" className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
+          </div>
 
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link has-text-light">
-                More
+          <div id="navbarBasicExample" className=" navbar-menu">
+            <div className="navbar-start">
+              <a className="navbar-item has-text-light">
+                Home
               </a>
 
-              <div className="navbar-dropdown">
-                <a className="navbar-item">
-                  About
-                </a>
-                <a className="navbar-item">
-                  Jobs
-                </a>
-                <a className="navbar-item">
-                  Contact
-                </a>
-                <hr className="navbar-divider" />
-                <a className="navbar-item">
-                  Report an issue
-                </a>
-              </div>
-            </div>
-          </div>
+              <a className="navbar-item has-text-light">
+                Documentation
+              </a>
 
-          <div className="navbar-end ml-0 mr-0">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-primary is-outlined mr-2">
-                  <strong>Sign up</strong>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link has-text-light">
+                  More
                 </a>
-                <a className="button is-light">
-                  Log in
-                </a>
+
+                <div className="navbar-dropdown">
+                  <a className="navbar-item">
+                    About
+                  </a>
+                  <a className="navbar-item">
+                    Jobs
+                  </a>
+                  <a className="navbar-item">
+                    Contact
+                  </a>
+                  <hr className="navbar-divider" />
+                  <a className="navbar-item">
+                    Report an issue
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="navbar-end ml-0 mr-0">
+              <div className="navbar-item">
+                <div className="buttons">
+                  <a className="button is-primary is-outlined mr-2">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a className="button is-light">
+                    Log in
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </nav>
       <section className="section hero is-dark">
@@ -118,7 +118,7 @@ function App() {
               // <img className="img-fluid" src={p.sprites.front_default}/>      
             ))
           } */}
-          
+
         </div>
       </section>
 
