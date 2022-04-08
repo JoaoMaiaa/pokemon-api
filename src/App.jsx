@@ -1,5 +1,6 @@
 import { useState, useEffect, Fragment } from 'react'
 import api from './services/api.js'
+import foto1 from '../assets/images/foto-1.jpeg'
 import axios from 'axios'
 
 function App() {
@@ -37,11 +38,10 @@ function App() {
       })
   }
 
-
   return (
     <Fragment>
       <header>
-        <nav class="navbar is-fixed-top">
+        <nav class="navbar has-background-black">
           <div className="container p-4">
 
             <div class="navbar-brand">
@@ -105,31 +105,178 @@ function App() {
           </div>
         </nav>
       </header>
-      <section className="section has-background-black">
+      <section className="section pt-4 has-background-black">
         <div className="container p-4">
-          <div className="columns pt-5">
+          <div className="columns">
             <div className="column has-text-light">
-              <h1 className="h1 is-size-2">O melhor jogo de Pokemon te espera</h1>
-              <p className="">Conheça o nosso jogo de pokemon e comece a capturar o seu</p>
+              <h1 className="h1 is-size-2 mr-5">O melhor jogo de <span className="has-text-weight-bold">Pokemon te espera</span></h1>
+              <p className="mt-3">Conheça o nosso jogo de pokemon e comece a capturar o seu.</p>
+              <p>Temos uma variedade de pokemons para você capturar e se divertir com sua família e seus amigos.</p>
+              <a href="#" className="mt-5 button is-light">Saiba mais</a>
+            </div>
+            <div className="column">
+              <img src={foto1} alt="" className="img-pokefire img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-success-dark">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
 
+            </div>
+            <div className="column">
+              {
+                pokemon.slice(0, 3).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-danger">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              {
+                pokemon.slice(3, 6).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
+            </div>
+            <div className="column">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-info">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+
+            </div>
+            <div className="column">
+              {
+                pokemon.slice(6, 9).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-success">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              {
+                pokemon.slice(9, 12).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
             </div>
             <div className="column"></div>
           </div>
-          {/* {          
-          pokemon.slice(0, 3).map((p) => (
-            <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
-            // <img className="img-fluid" src={p.sprites.front_default}/>      
-          ))
-          }
-          {
-            pokemon.slice(3, 6).map((p) => (
-              <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
-              // <img className="img-fluid" src={p.sprites.front_default}/>      
-            ))
-          } */}
-
         </div>
       </section>
+      <section className="section has-background-warning">
+        <div className="container">
+          <div className="columns">
+            <div className="column"></div>
+            <div className="column">
+              {
+                pokemon.slice(12, 15).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-success">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              {
+                pokemon.slice(15, 18).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
+            </div>
+            <div className="column"></div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-warning-dark">
+        <div className="container">
+          <div className="columns">
+            <div className="column"></div>
+            <div className="column">
+              {
+                pokemon.slice(18, 20).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default}/>      
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-light">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              <h2 className="h2 is-size-3 has-text-black">Todos os pokemons <span className="has-text-weight-bold">disponíveis</span> para você e seus amigos capturarem</h2>
+            </div>
+            <div className="column is-6">
+              {
+                pokemon.map((p) => (
+                  // <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  <img className="img-fluid" src={p.sprites.front_default} />
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section has-background-black">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              <p className="is-size-3">Menu</p>
+              <ul>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+              </ul>
+            </div>
+            <div className="column">
+              <p className="is-size-3">Tipos de Pokemon</p>
+              <ul>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="footer has-background-black">
+        <div className="container has-text-centered">
+          Feito por <a target="_black" href="https://github.com/JoaoMaiaa">João Maia</a>
+        </div>
+      </footer>
     </Fragment>
   )
 
