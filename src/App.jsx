@@ -40,64 +40,48 @@ function App() {
 
   return (
     <Fragment>
+      {
+        pokemon.map((p) => (
+          console.log(p)
+        ))
+      }
       <header>
         <nav class="navbar has-background-black">
           <div className="container p-4">
-
             <div class="navbar-brand">
               <a class="navbar-item" href="#">
                 <img className="img-fluid" src="../assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" />
               </a>
-
               <a role="button" className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
               </a>
             </div>
-
             <div id="navbarBasicExample" className=" navbar-menu">
               <div className="navbar-start">
-                <a className="navbar-item has-text-light">
-                  Home
-                </a>
-
-                <a className="navbar-item has-text-light">
-                  Documentation
-                </a>
-
+                <a className="navbar-item has-text-light">Home</a>
+                <a className="navbar-item has-text-light">Documentação</a>
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link has-text-light">
-                    More
-                  </a>
-
+                  <a className="navbar-link has-text-light">Pokémons</a>
                   <div className="navbar-dropdown">
-                    <a className="navbar-item">
-                      About
-                    </a>
-                    <a className="navbar-item">
-                      Jobs
-                    </a>
-                    <a className="navbar-item">
-                      Contact
-                    </a>
-                    <hr className="navbar-divider" />
-                    <a className="navbar-item">
-                      Report an issue
-                    </a>
+                    <a className="navbar-item">Planta</a>
+                    <a className="navbar-item">Fogo</a>
+                    <a className="navbar-item">Água</a>
+                    <a className="navbar-item">Insetos 1</a>
+                    <a className="navbar-item">Insetos 2</a>
+                    <a className="navbar-item">Pássaros</a>
+                    <a className="navbar-item">Roedores</a>
                   </div>
                 </div>
               </div>
-
               <div className="navbar-end ml-0 mr-0">
                 <div className="navbar-item">
                   <div className="buttons">
                     <a className="button is-primary is-outlined mr-2">
                       <strong>Sign up</strong>
                     </a>
-                    <a className="button is-light">
-                      Log in
-                    </a>
+                    <a className="button is-light">Log in</a>
                   </div>
                 </div>
               </div>
@@ -107,11 +91,11 @@ function App() {
       </header>
       <section className="section pt-4 has-background-black">
         <div className="container p-4">
-          <div className="columns">
+          <div className="columns pb-5 mb-5">
             <div className="column has-text-light">
-              <h1 className="h1 is-size-2 mr-5">O melhor jogo de <span className="has-text-weight-bold">Pokemon te espera</span></h1>
-              <p className="mt-3">Conheça o nosso jogo de pokemon e comece a capturar o seu.</p>
-              <p>Temos uma variedade de pokemons para você capturar e se divertir com sua família e seus amigos.</p>
+              <h1 className="h1 is-size-2 mr-5">O melhor jogo de <span className="has-text-weight-bold">Pokémon te espera</span></h1>
+              <p className="mt-3 has-text-grey-light">Conheça o nosso jogo de pokemon e comece a capturar o seu.</p>
+              <p className="has-text-grey-light">Temos uma variedade de pokemons para você capturar e se divertir com sua família e seus amigos.</p>
               <a href="#" className="mt-5 button is-light">Saiba mais</a>
             </div>
             <div className="column">
@@ -235,7 +219,8 @@ function App() {
         <div className="container">
           <div className="columns">
             <div className="column">
-              <h2 className="h2 is-size-3 has-text-black">Todos os pokemons <span className="has-text-weight-bold">disponíveis</span> para você e seus amigos capturarem</h2>
+              <h2 className="h2 is-size-3 has-text-black has-text-weight-normal">Todos os pokémons <span className="has-text-weight-bold is-underlined">disponíveis</span> para você e seus amigos capturarem.</h2>
+              <p className="mt-4 has-text-weight-normal">Pokémon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em <span className="has-text-black has-text-weight-bold">1995</span>. Ela é centrada em criaturas ficcionais chamadas <span className="has-text-black has-text-weight-bold">"Pokémon"</span>, que os seres humanos capturam e os treinam para lutarem entre si com seus ataques de <span className="has-text-black has-text-weight-bold">diversos tipos.</span></p>
             </div>
             <div className="column is-6">
               {
@@ -254,19 +239,22 @@ function App() {
             <div className="column">
               <p className="is-size-3">Menu</p>
               <ul>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Home</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Contato</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Documentação</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Sobre</a></li>
               </ul>
             </div>
             <div className="column">
               <p className="is-size-3">Tipos de Pokemon</p>
               <ul>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
-                <li><a href="#" className="has-text-grey-light">lorem ipsum</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Planta</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Água</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Fogo</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Inseto 1</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Inseto 2</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Pássaros</a></li>
+                <li className="my-2"><a href="#" className="has-text-grey-light">Roedores</a></li>
               </ul>
             </div>
           </div>
@@ -274,7 +262,7 @@ function App() {
       </section>
       <footer className="footer has-background-black">
         <div className="container has-text-centered">
-          Feito por <a target="_black" href="https://github.com/JoaoMaiaa">João Maia</a>
+          Feito por <a target="_black" className="has-text-grey-light" href="https://github.com/JoaoMaiaa">João Maia</a>
         </div>
       </footer>
     </Fragment>
