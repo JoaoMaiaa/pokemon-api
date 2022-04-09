@@ -41,6 +41,9 @@ function App() {
 
   return (
     <Fragment>
+      {pokemon.slice(0, 3).map(p => {
+        console.log(p)
+      })}
       <header>
         <nav class="navbar has-background-black">
           <div className="container p-4">
@@ -207,6 +210,114 @@ function App() {
                   // <img className="img-fluid" src={p.sprites.front_default}/>      
                 ))
               }
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-4">
+              <div className="px-5 notification has-background-success-dark">
+                <div className=" is-flex">
+                  {pokemon.slice(0, 3).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(0, 3).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="column is-4">
+              <div className="px-5 notification has-background-danger">
+                <div className="is-flex">
+                  {pokemon.slice(3, 6).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(3, 6).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="column is-4">
+              <div className="px-5 notification has-background-info">
+                <div className="is-flex">
+                  {pokemon.slice(6, 9).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(6, 9).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column is-4">
+              <div className="px-5 notification has-background-success">
+                <div className="">
+                  {pokemon.slice(9, 12).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(9, 12).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="column is-4">
+              <div className="px-5 notification has-background-warning">
+                <div className="is-flex">
+                  {pokemon.slice(12, 15).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(12, 15).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="column is-4">
+              <div className="px-5 notification has-background-success">
+                <div className="is-flex">
+                  {pokemon.slice(15, 18).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(15, 18).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column">
+              <div className="px-5 notification has-background-warning-dark">
+                <div className="is-flex is-justify-content-center">
+                  {pokemon.slice(18, 20).map(p => (
+                    <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(18, 20).map(p => (
+                    <p className="mx-auto">{p.species.name}</p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
