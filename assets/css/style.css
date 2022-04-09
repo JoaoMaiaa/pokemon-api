@@ -14,4 +14,13 @@
   border-radius: 10px;
 }
 
+.control input, .control .button {
+  border-radius: 0;
+}
+
+.control input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 0.125em rgba(0, 0, 0, 0.25);
+}
+
 /*# sourceMappingURL=style.css.map */

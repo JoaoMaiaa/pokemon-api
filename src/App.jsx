@@ -1,5 +1,6 @@
 import { useState, useEffect, Fragment } from 'react'
 import api from './services/api.js'
+import { Facebook, Instagram, Twitter, Tiktok } from 'react-bootstrap-icons'
 import foto1 from '../assets/images/foto-1.jpeg'
 import axios from 'axios'
 
@@ -40,11 +41,6 @@ function App() {
 
   return (
     <Fragment>
-      {
-        pokemon.map((p) => (
-          console.log(p)
-        ))
-      }
       <header>
         <nav class="navbar has-background-black">
           <div className="container p-4">
@@ -75,13 +71,13 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="navbar-end ml-0 mr-0">
+              <div className="navbar-end m-0">
                 <div className="navbar-item">
                   <div className="buttons">
-                    <a className="button is-primary is-outlined mr-2">
-                      <strong>Sign up</strong>
+                    <a className="button is-success is-outlined mr-2">
+                      <strong>Inscrever-se</strong>
                     </a>
-                    <a className="button is-light">Log in</a>
+                    <a className="button is-light">Entrar</a>
                   </div>
                 </div>
               </div>
@@ -221,12 +217,23 @@ function App() {
             <div className="column">
               <h2 className="h2 is-size-3 has-text-black has-text-weight-normal">Todos os pokémons <span className="has-text-weight-bold is-underlined">disponíveis</span> para você e seus amigos capturarem.</h2>
               <p className="mt-4 has-text-weight-normal">Pokémon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em <span className="has-text-black has-text-weight-bold">1995</span>. Ela é centrada em criaturas ficcionais chamadas <span className="has-text-black has-text-weight-bold">"Pokémon"</span>, que os seres humanos capturam e os treinam para lutarem entre si com seus ataques de <span className="has-text-black has-text-weight-bold">diversos tipos.</span></p>
+              <h3 className="h3 is-size-4 mt-5 has-text-black">Inscreva-se na nossa lista de conteúdo semanal</h3>
+              <div class="field has-addons mt-4">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Your email" />
+                </div>
+                <div class="control">
+                  <a href="#" class="button is-black">
+                    Enviar
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="column is-6">
+            <div className="column is-6 is-flex is-justify-content-center">
               {
-                pokemon.map((p) => (
-                  // <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
-                  <img className="img-fluid" src={p.sprites.front_default} />
+                pokemon.slice(4, 5).map((p) => (
+                  <img className="img-fluid" src={p.sprites.other.dream_world.front_default} />
+                  // <img className="img-fluid" src={p.sprites.front_default} />
                 ))
               }
             </div>
@@ -243,6 +250,13 @@ function App() {
                 <li className="my-2"><a href="#" className="has-text-grey-light">Contato</a></li>
                 <li className="my-2"><a href="#" className="has-text-grey-light">Documentação</a></li>
                 <li className="my-2"><a href="#" className="has-text-grey-light">Sobre</a></li>
+              </ul>
+              <p className="is-size-3 my-4">Siga-nos</p>
+              <ul className="is-flex is-baseline">
+                <li className="mr-2"><a href="#"><i className="has-text-success"><Facebook /></i></a></li>
+                <li className="mx-2"><a href="#"><i className="has-text-success"><Instagram /></i></a></li>
+                <li className="mx-2"><a href="#"><i className="has-text-success"><Twitter /></i></a></li>
+                <li className="mx-2"><a href="#"><i className="has-text-success"><Tiktok /></i></a></li>
               </ul>
             </div>
             <div className="column">
