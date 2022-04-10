@@ -45,10 +45,10 @@ function App() {
         console.log(p)
       })}
       <header>
-        <nav class="navbar has-background-black">
+        <nav className="navbar has-background-black">
           <div className="container p-4">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="#">
+            <div className="navbar-brand">
+              <a className="navbar-item" href="#">
                 <img className="img-fluid" src="../assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" />
               </a>
               <a role="button" className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -106,8 +106,9 @@ function App() {
       <section className="section has-background-success-dark">
         <div className="container">
           <div className="columns">
-            <div className="column">
-
+            <div className="column has-text-light">
+              <p className="mb-5">Os Pokémon do tipo grama geralmente são pacíficos e gostam de cuidar de flores e outros, mas também são ótimos lutadores e podem envenenar, paralisar ou colocar o oponente para dormir em batalha.</p>
+              <p>Normalmente seu corpo costuma ser o mesmo de algumas espécies de plantas, nesse caso o Pokémon cresce em um desenvolvimento muito parecido com uma planta. Quando não é o caso, os Pokémon costumam desenvolver folhas, flores, entre outras que possuem crescimento próprio, mas são controladas pelo Pokémon.Outra coisa que caracteriza os Pokémon do tipo grama é que vários de seus movimentos permitem recuperar pontos de saúde, como raízes, drenos ou síntese</p>
             </div>
             <div className="column">
               {
@@ -131,8 +132,9 @@ function App() {
                 ))
               }
             </div>
-            <div className="column">
-
+            <div className="column has-text-light">
+              <p className="mb-5">O tipo Fogo foi criado na 1ª Geração, quando existiam 12 Pokémon desse tipo. Conforme a franquia evoluiu, a quantidade de tipo Fogo aumentou, chegando atualmente a 87. Quando se levam os Movimentos em consideração, podem ser encontrados entre eles 47 Movimentos de tipo Fogo. No Trading Card Game (TCG), Fogo está exclusivamente representado em um tipo de mesmo nome. Em inglês, o tipo Fogo é chamado de "Fire Type".</p>
+              <p>Nos jogos da série principal desde a Geração III, o tipo Fogo é representado pela cor laranja. No entanto, na maioria das outras mídias Pokémon, incluindo o TCG, a série Pokémon Stadium e a série Mystery Dungeon, o tipo Fogo é associado à cor vermelha. De acordo com o Pokédex, os Pokémon mais quentes são Magcargo e Camerupt, podendo atingir 18.000ºF (cerca de 10.000ºC)</p>
             </div>
           </div>
         </div>
@@ -226,7 +228,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(0, 3).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(0, 3).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -240,7 +247,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(3, 6).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(3, 6).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -254,7 +266,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(6, 9).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(6, 9).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -270,7 +287,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(9, 12).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(9, 12).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -284,7 +306,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(12, 15).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(12, 15).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -298,7 +325,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(15, 18).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(15, 18).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -314,7 +346,12 @@ function App() {
                 </div>
                 <div className="is-flex">
                   {pokemon.slice(18, 20).map(p => (
-                    <p className="mx-auto">{p.species.name}</p>
+                    <p className="mx-auto has-text-light">{p.base_experience}</p>
+                  ))}
+                </div>
+                <div className="is-flex">
+                  {pokemon.slice(18, 20).map(p => (
+                    <p className="mx-auto has-text-light">{p.species.name}</p>
                   ))}
                 </div>
               </div>
@@ -329,12 +366,12 @@ function App() {
               <h2 className="h2 is-size-3 has-text-black has-text-weight-normal">Todos os pokémons <span className="has-text-weight-bold is-underlined">disponíveis</span> para você e seus amigos capturarem.</h2>
               <p className="mt-4 has-text-weight-normal">Pokémon é uma franquia de mídia que pertence a The Pokémon Company, tendo sido criada por Satoshi Tajiri em <span className="has-text-black has-text-weight-bold">1995</span>. Ela é centrada em criaturas ficcionais chamadas <span className="has-text-black has-text-weight-bold">"Pokémon"</span>, que os seres humanos capturam e os treinam para lutarem entre si com seus ataques de <span className="has-text-black has-text-weight-bold">diversos tipos.</span></p>
               <h3 className="h3 is-size-4 mt-5 has-text-black">Inscreva-se na nossa lista de conteúdo semanal</h3>
-              <div class="field has-addons mt-4">
-                <div class="control">
-                  <input class="input" type="text" placeholder="Your email" />
+              <div className="field has-addons mt-4">
+                <div className="control">
+                  <input className="input" type="text" placeholder="Your email" />
                 </div>
                 <div class="control">
-                  <a href="#" class="button is-black">
+                  <a href="#" className="button is-black">
                     Enviar
                   </a>
                 </div>
