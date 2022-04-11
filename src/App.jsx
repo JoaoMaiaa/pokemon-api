@@ -143,7 +143,8 @@ function App() {
         <div className="container">
           <div className="columns">
             <div className="column">
-
+              <p className="has-text-light">A 1ª Geração foi a que introduziu o tipo Água, incluindo 32 Pokémon e 9 Movimentos. A primeira geração foi, inclusive, a que mais criou Pokémon e Movimentos aquáticos. Atualmente, estes números chegam a 164 Pokémon e 53 Movimentos. Isso provavelmente é uma alusão ao nosso mundo, cuja superfície é 75% composta por água. No TCG, Água está incluído em um tipo de mesmo nome. Em inglês, o tipo Água é chamado de Water Type.</p>             
+              <p className="has-text-light">A Geração II é a única que não introduziu nenhum Especialista tipo Água. O tipo Água tem mais Pokémon que evoluem via troca, com um total de 6. São: Politoed, Slowking, Kingdra, Milotic, Huntail e Gorebyss. Dos três tipos de Pokémon Iniciais, Água é o único a ter todos os seus membros - incluindo as respectivas evoluções - de mesma cor. Todos eles possuem tons de azul. Água, Voador e Psíquico são os únicos tipos que foram emparelhados com todos os outros tipos. Existem cinco Movimentos G-Max de tipo Água, mais do que qualquer outro tipo</p>
             </div>
             <div className="column">
               {
@@ -167,14 +168,24 @@ function App() {
                 ))
               }
             </div>
-            <div className="column"></div>
+            <div className="column">
+              <p className="has-text-light">O tipo Inseto teve sua introdução na 1ª Geração, em 1996, quando foram criados 12 Pokémon deste tipo. Conforme as Gerações avançaram, mais criaturas do tipo surgiram, até se chegar aos 95 Pokémon atuais. Esse valor se deve, principalmente, à 5ª Geração, que adicionou 18 Pokémon deste tipo à lista. Por outro lado, ao falar de Movimentos, podemos calcular 35 pertencentes ao tipo. Por fim, dentro do TCG, Inseto está incluído no tipo Planta. Em inglês, o tipo Inseto é chamado de Bug Type</p>
+            </div>
           </div>
         </div>
       </section>
       <section className="section has-background-warning">
         <div className="container">
           <div className="columns">
-            <div className="column"></div>
+            <div className="column">
+              <p className="has-text-grey">Também são do tipo inseto</p>
+              <p className="has-text-grey is-size-4">Algumas curiosidades sobre eles</p>
+              <p className="has-text-grey">O tipo Inseto nunca foi pareado com Pokémon tipo Dragão ou Sombrio.</p>
+              <p className="has-text-grey">Nenhum Pokémon ganha o tipo Inseto quando evolui caso originalmente não o possua.</p>
+              <p className="has-text-grey">Todos os Movimentos tipo Inseto podem ser usados nas Sky Battles.</p>
+              <p className="has-text-grey">O tipo Inseto era a fraqueza 4x mais comum na Geração I.</p>
+              <p className="has-text-grey">Os tipos Inseto e Lutador são os únicos que, separados, resistem um ao outro.</p>
+            </div>
             <div className="column">
               {
                 pokemon.slice(12, 15).map((p) => (
@@ -197,7 +208,11 @@ function App() {
                 ))
               }
             </div>
-            <div className="column"></div>
+            <div className="column">
+              <p className="has-text-light">Criado na 1ª Geração, o tipo Voador possuía inicialmente 19 representantes. Com o tempo, esse número foi crescendo, atualmente totalizando 86 Pokémon. As duas primeiras Gerações foram as que mais contribuíram para esse valor, pois foram as que mais adicionaram Pokémon voadores: 19 espécies cada. Em termos de Movimentos, o tipo Voador atualmente abrange 33 deles. No TCG, o tipo Voador está incluído em Colorless. Em inglês, o tipo Voador é chamado de Flying Type.</p>
+              <p className="has-text-light">O tipo Voador foi o último a receber um Pokémon de um único tipo. Trata-se de Tornadus, na 5ª Geração
+                O tipo Voador foi o último a receber um Pokémon com dois tipos, sendo ele o tipo Primário. Trata-se de Noibat e Noivern, na Geração VI</p>
+            </div>
           </div>
         </div>
       </section>
