@@ -40,10 +40,7 @@ function App() {
   }
 
   return (
-    <Fragment>
-      {pokemon.slice(0, 3).map(p => {
-        console.log(p)
-      })}
+    <Fragment>      
       <header>
         <nav className="navbar has-background-black">
           <div className="container p-4">
@@ -106,9 +103,10 @@ function App() {
       <section className="section has-background-success-dark">
         <div className="container">
           <div className="columns">
-            <div className="column has-text-light">
-              <p className="mb-5">Os Pokémon do tipo grama geralmente são pacíficos e gostam de cuidar de flores e outros, mas também são ótimos lutadores e podem envenenar, paralisar ou colocar o oponente para dormir em batalha.</p>
-              <p>Normalmente seu corpo costuma ser o mesmo de algumas espécies de plantas, nesse caso o Pokémon cresce em um desenvolvimento muito parecido com uma planta. Quando não é o caso, os Pokémon costumam desenvolver folhas, flores, entre outras que possuem crescimento próprio, mas são controladas pelo Pokémon.Outra coisa que caracteriza os Pokémon do tipo grama é que vários de seus movimentos permitem recuperar pontos de saúde, como raízes, drenos ou síntese</p>
+            <div className="column has-text-light my-auto">
+              <h2 className="title is-2 has-text-light pb-4">Tipo planta</h2>
+              <p className="my-5">Os Pokémon do tipo grama geralmente são pacíficos e gostam de cuidar de flores e outros, mas também são ótimos lutadores e podem envenenar, paralisar ou colocar o oponente para dormir em batalha.</p>
+              <p className="mb-5 pb-4">Normalmente seu corpo costuma ser o mesmo de algumas espécies de plantas, nesse caso o Pokémon cresce em um desenvolvimento muito parecido com uma planta. Quando não é o caso, os Pokémon costumam desenvolver folhas, flores, entre outras que possuem crescimento próprio, mas são controladas pelo Pokémon.Outra coisa que caracteriza os Pokémon do tipo grama é que vários de seus movimentos permitem recuperar pontos de saúde, como raízes, drenos ou síntese</p>
             </div>
             <div className="column">
               {
@@ -132,9 +130,9 @@ function App() {
                 ))
               }
             </div>
-            <div className="column has-text-light">
-              <p className="mb-5">O tipo Fogo foi criado na 1ª Geração, quando existiam 12 Pokémon desse tipo. Conforme a franquia evoluiu, a quantidade de tipo Fogo aumentou, chegando atualmente a 87. Quando se levam os Movimentos em consideração, podem ser encontrados entre eles 47 Movimentos de tipo Fogo. No Trading Card Game (TCG), Fogo está exclusivamente representado em um tipo de mesmo nome. Em inglês, o tipo Fogo é chamado de "Fire Type".</p>
-              <p>Nos jogos da série principal desde a Geração III, o tipo Fogo é representado pela cor laranja. No entanto, na maioria das outras mídias Pokémon, incluindo o TCG, a série Pokémon Stadium e a série Mystery Dungeon, o tipo Fogo é associado à cor vermelha. De acordo com o Pokédex, os Pokémon mais quentes são Magcargo e Camerupt, podendo atingir 18.000ºF (cerca de 10.000ºC)</p>
+            <div className="column has-text-light my-auto">
+              <h2 className="title is-2 has-text-light pb-4">Tipo fogo</h2>
+              <p className="mb-5 pb-5">O tipo Fogo foi criado na 1ª Geração, quando existiam 12 Pokémon desse tipo. Conforme a franquia evoluiu, a quantidade de tipo Fogo aumentou, chegando atualmente a 87. Quando se levam os Movimentos em consideração, podem ser encontrados entre eles 47 Movimentos de tipo Fogo. No Trading Card Game (TCG), Fogo está exclusivamente representado em um tipo de mesmo nome. Em inglês, o tipo Fogo é chamado de "Fire Type".</p>
             </div>
           </div>
         </div>
@@ -142,9 +140,9 @@ function App() {
       <section className="section has-background-info">
         <div className="container">
           <div className="columns">
-            <div className="column">
-              <p className="has-text-light">A 1ª Geração foi a que introduziu o tipo Água, incluindo 32 Pokémon e 9 Movimentos. A primeira geração foi, inclusive, a que mais criou Pokémon e Movimentos aquáticos. Atualmente, estes números chegam a 164 Pokémon e 53 Movimentos. Isso provavelmente é uma alusão ao nosso mundo, cuja superfície é 75% composta por água. No TCG, Água está incluído em um tipo de mesmo nome. Em inglês, o tipo Água é chamado de Water Type.</p>             
-              <p className="has-text-light">A Geração II é a única que não introduziu nenhum Especialista tipo Água. O tipo Água tem mais Pokémon que evoluem via troca, com um total de 6. São: Politoed, Slowking, Kingdra, Milotic, Huntail e Gorebyss. Dos três tipos de Pokémon Iniciais, Água é o único a ter todos os seus membros - incluindo as respectivas evoluções - de mesma cor. Todos eles possuem tons de azul. Água, Voador e Psíquico são os únicos tipos que foram emparelhados com todos os outros tipos. Existem cinco Movimentos G-Max de tipo Água, mais do que qualquer outro tipo</p>
+            <div className="column my-auto">
+            <h2 className="title is-2 has-text-light pb-4">Tipo água</h2>
+              <p className="has-text-light my-5 pb-5">A 1ª Geração foi a que introduziu o tipo Água, incluindo 32 Pokémon e 9 Movimentos. A primeira geração foi, inclusive, a que mais criou Pokémon e Movimentos aquáticos. Atualmente, estes números chegam a 164 Pokémon e 53 Movimentos. Isso provavelmente é uma alusão ao nosso mundo, cuja superfície é 75% composta por água. No TCG, Água está incluído em um tipo de mesmo nome. Em inglês, o tipo Água é chamado de Water Type.</p>             
             </div>
             <div className="column">
               {
@@ -168,8 +166,9 @@ function App() {
                 ))
               }
             </div>
-            <div className="column">
-              <p className="has-text-light">O tipo Inseto teve sua introdução na 1ª Geração, em 1996, quando foram criados 12 Pokémon deste tipo. Conforme as Gerações avançaram, mais criaturas do tipo surgiram, até se chegar aos 95 Pokémon atuais. Esse valor se deve, principalmente, à 5ª Geração, que adicionou 18 Pokémon deste tipo à lista. Por outro lado, ao falar de Movimentos, podemos calcular 35 pertencentes ao tipo. Por fim, dentro do TCG, Inseto está incluído no tipo Planta. Em inglês, o tipo Inseto é chamado de Bug Type</p>
+            <div className="column my-auto">
+            <h2 className="title is-2 has-text-light pb-4">Tipo Inseto 1</h2>
+              <p className="has-text-light my-5 pb-5">O tipo Inseto teve sua introdução na 1ª Geração, em 1996, quando foram criados 12 Pokémon deste tipo. Conforme as Gerações avançaram, mais criaturas do tipo surgiram, até se chegar aos 95 Pokémon atuais. Esse valor se deve, principalmente, à 5ª Geração, que adicionou 18 Pokémon deste tipo à lista. Por outro lado, ao falar de Movimentos, podemos calcular 35 pertencentes ao tipo. Por fim, dentro do TCG, Inseto está incluído no tipo Planta. Em inglês, o tipo Inseto é chamado de Bug Type</p>
             </div>
           </div>
         </div>
@@ -177,14 +176,14 @@ function App() {
       <section className="section has-background-warning">
         <div className="container">
           <div className="columns">
-            <div className="column">
+            <div className="column my-auto">
               <p className="has-text-grey">Também são do tipo inseto</p>
-              <p className="has-text-grey is-size-4">Algumas curiosidades sobre eles</p>
+              <p className="has-text-grey is-size-2 my-4">Algumas curiosidades sobre eles</p>
               <p className="has-text-grey">O tipo Inseto nunca foi pareado com Pokémon tipo Dragão ou Sombrio.</p>
               <p className="has-text-grey">Nenhum Pokémon ganha o tipo Inseto quando evolui caso originalmente não o possua.</p>
               <p className="has-text-grey">Todos os Movimentos tipo Inseto podem ser usados nas Sky Battles.</p>
               <p className="has-text-grey">O tipo Inseto era a fraqueza 4x mais comum na Geração I.</p>
-              <p className="has-text-grey">Os tipos Inseto e Lutador são os únicos que, separados, resistem um ao outro.</p>
+              <p className="has-text-grey mb-5 pb-4">Os tipos Inseto e Lutador são os únicos que, separados, resistem um ao outro.</p>
             </div>
             <div className="column">
               {
@@ -208,10 +207,9 @@ function App() {
                 ))
               }
             </div>
-            <div className="column">
-              <p className="has-text-light">Criado na 1ª Geração, o tipo Voador possuía inicialmente 19 representantes. Com o tempo, esse número foi crescendo, atualmente totalizando 86 Pokémon. As duas primeiras Gerações foram as que mais contribuíram para esse valor, pois foram as que mais adicionaram Pokémon voadores: 19 espécies cada. Em termos de Movimentos, o tipo Voador atualmente abrange 33 deles. No TCG, o tipo Voador está incluído em Colorless. Em inglês, o tipo Voador é chamado de Flying Type.</p>
-              <p className="has-text-light">O tipo Voador foi o último a receber um Pokémon de um único tipo. Trata-se de Tornadus, na 5ª Geração
-                O tipo Voador foi o último a receber um Pokémon com dois tipos, sendo ele o tipo Primário. Trata-se de Noibat e Noivern, na Geração VI</p>
+            <div className="column my-auto">
+              <h2 className="title is-2 has-text-light pb-4">Tipo Voador</h2>
+              <p className="has-text-light my-5 pb-5">Criado na 1ª Geração, o tipo Voador possuía inicialmente 19 representantes. Com o tempo, esse número foi crescendo, atualmente totalizando 86 Pokémon. As duas primeiras Gerações foram as que mais contribuíram para esse valor, pois foram as que mais adicionaram Pokémon voadores: 19 espécies cada. Em termos de Movimentos, o tipo Voador atualmente abrange 33 deles. No TCG, o tipo Voador está incluído em Colorless. Em inglês, o tipo Voador é chamado de Flying Type.</p>
             </div>
           </div>
         </div>
@@ -219,7 +217,10 @@ function App() {
       <section className="section has-background-warning-dark">
         <div className="container">
           <div className="columns">
-            <div className="column"></div>
+            <div className="column my-auto">
+              <h2 className="title is-2 has-text-light pb-4">Tipo roedor</h2>
+              <p className="has-text-light pb-5 mb-5">Rattata é um pequeno Pokémon roedor quadrúpede. Tem pêlo roxo com rosto, patas e barriga de cor creme. Tem olhos estreitos contendo esclera branca e pupila com íris vermelhas, orelhas arredondadas com interior de cor creme e um único bigode em cada bochecha. Sua longa cauda é bem enrolada no final. Sua característica mais notável são seus dentes grandes. Como a maioria dos roedores, seus dentes crescem continuamente ao longo de sua vida e devem ser desgastados por roer. Uma fêmea Rattata terá bigodes mais curtos e pêlos mais claros.</p>
+            </div>
             <div className="column">
               {
                 pokemon.slice(18, 20).map((p) => (
@@ -295,7 +296,7 @@ function App() {
           <div className="columns">
             <div className="column is-4">
               <div className="px-5 notification has-background-success">
-                <div className="">
+                <div className="is-flex">
                   {pokemon.slice(9, 12).map(p => (
                     <img src={p.sprites.front_default} alt="" className="mx-auto img-fluid" />
                   ))}
