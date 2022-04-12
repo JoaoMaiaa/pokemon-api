@@ -1,5 +1,9 @@
 @import '../../node_modules/bulma/css/bulma-rtl.min.css';
 
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     font-family: 'Oswald', sans-serif!important;
 }

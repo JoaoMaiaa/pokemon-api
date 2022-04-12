@@ -39,35 +39,43 @@ function App() {
       })
   }
 
+  function navBurger(){
+    let burger = document.querySelector('.navbar-burger')
+    let menu = document.querySelector('.navbar-menu')
+
+    menu.classList.toggle('is-active')
+    burger.classList.toggle('is-active')
+  }
+
   return (
-    <Fragment>      
-      <header>
+    <Fragment>
+      <header id="home">
         <nav className="navbar has-background-black">
           <div className="container p-4">
             <div className="navbar-brand">
               <a className="navbar-item" href="#">
                 <img className="img-fluid" src="../assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" />
               </a>
-              <a role="button" className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <a role="button" onClick={()=>navBurger()} className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
               </a>
             </div>
-            <div id="navbarBasicExample" className=" navbar-menu">
+            <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
-                <a className="navbar-item has-text-light">Home</a>
-                <a className="navbar-item has-text-light">Documentação</a>
+                <a href="#home" className="navbar-item has-text-grey-light">Home</a>
+                <a href="#" className="navbar-item has-text-grey-light">Documentação</a>
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link has-text-light">Pokémons</a>
+                  <a className="navbar-link has-text-light has-background-black">Pokémons</a>
                   <div className="navbar-dropdown">
-                    <a className="navbar-item">Planta</a>
-                    <a className="navbar-item">Fogo</a>
-                    <a className="navbar-item">Água</a>
-                    <a className="navbar-item">Insetos 1</a>
-                    <a className="navbar-item">Insetos 2</a>
-                    <a className="navbar-item">Pássaros</a>
-                    <a className="navbar-item">Roedores</a>
+                    <a href="#planta" className="navbar-item">Planta</a>
+                    <a href="#fogo" className="navbar-item">Fogo</a>
+                    <a href="#agua" className="navbar-item">Água</a>
+                    <a href="#insetos-1" className="navbar-item">Insetos 1</a>
+                    <a href="#insetos-2" className="navbar-item">Insetos 2</a>
+                    <a href="#passaros" className="navbar-item">Pássaros</a>
+                    <a href="#roedores" className="navbar-item">Roedores</a>
                   </div>
                 </div>
               </div>
@@ -101,7 +109,7 @@ function App() {
         </div>
       </section>
       <section className="section has-background-success-dark">
-        <div className="container">
+        <div className="container" id="planta">
           <div className="columns">
             <div className="column has-text-light my-auto">
               <h2 className="title is-2 has-text-light pb-4">Tipo planta</h2>
@@ -120,7 +128,7 @@ function App() {
         </div>
       </section>
       <section className="section has-background-danger">
-        <div className="container">
+        <div className="container" id="fogo">
           <div className="columns">
             <div className="column">
               {
@@ -139,10 +147,10 @@ function App() {
       </section>
       <section className="section has-background-info">
         <div className="container">
-          <div className="columns">
+          <div className="columns" id="agua">
             <div className="column my-auto">
-            <h2 className="title is-2 has-text-light pb-4">Tipo água</h2>
-              <p className="has-text-light my-5 pb-5">A 1ª Geração foi a que introduziu o tipo Água, incluindo 32 Pokémon e 9 Movimentos. A primeira geração foi, inclusive, a que mais criou Pokémon e Movimentos aquáticos. Atualmente, estes números chegam a 164 Pokémon e 53 Movimentos. Isso provavelmente é uma alusão ao nosso mundo, cuja superfície é 75% composta por água. No TCG, Água está incluído em um tipo de mesmo nome. Em inglês, o tipo Água é chamado de Water Type.</p>             
+              <h2 className="title is-2 has-text-light pb-4">Tipo água</h2>
+              <p className="has-text-light my-5 pb-5">A 1ª Geração foi a que introduziu o tipo Água, incluindo 32 Pokémon e 9 Movimentos. A primeira geração foi, inclusive, a que mais criou Pokémon e Movimentos aquáticos. Atualmente, estes números chegam a 164 Pokémon e 53 Movimentos. Isso provavelmente é uma alusão ao nosso mundo, cuja superfície é 75% composta por água. No TCG, Água está incluído em um tipo de mesmo nome. Em inglês, o tipo Água é chamado de Water Type.</p>
             </div>
             <div className="column">
               {
@@ -156,7 +164,7 @@ function App() {
         </div>
       </section>
       <section className="section has-background-success">
-        <div className="container">
+        <div className="container" id="insetos-1">
           <div className="columns">
             <div className="column">
               {
@@ -167,14 +175,14 @@ function App() {
               }
             </div>
             <div className="column my-auto">
-            <h2 className="title is-2 has-text-light pb-4">Tipo Inseto 1</h2>
+              <h2 className="title is-2 has-text-light pb-4">Tipo inseto 1</h2>
               <p className="has-text-light my-5 pb-5">O tipo Inseto teve sua introdução na 1ª Geração, em 1996, quando foram criados 12 Pokémon deste tipo. Conforme as Gerações avançaram, mais criaturas do tipo surgiram, até se chegar aos 95 Pokémon atuais. Esse valor se deve, principalmente, à 5ª Geração, que adicionou 18 Pokémon deste tipo à lista. Por outro lado, ao falar de Movimentos, podemos calcular 35 pertencentes ao tipo. Por fim, dentro do TCG, Inseto está incluído no tipo Planta. Em inglês, o tipo Inseto é chamado de Bug Type</p>
             </div>
           </div>
         </div>
       </section>
       <section className="section has-background-warning">
-        <div className="container">
+        <div className="container" id="insetos-2">
           <div className="columns">
             <div className="column my-auto">
               <p className="has-text-grey">Também são do tipo inseto</p>
@@ -197,7 +205,7 @@ function App() {
         </div>
       </section>
       <section className="section has-background-success">
-        <div className="container">
+        <div className="container" id="passaros">
           <div className="columns">
             <div className="column">
               {
@@ -208,14 +216,14 @@ function App() {
               }
             </div>
             <div className="column my-auto">
-              <h2 className="title is-2 has-text-light pb-4">Tipo Voador</h2>
+              <h2 className="title is-2 has-text-light pb-4">Tipo voador</h2>
               <p className="has-text-light my-5 pb-5">Criado na 1ª Geração, o tipo Voador possuía inicialmente 19 representantes. Com o tempo, esse número foi crescendo, atualmente totalizando 86 Pokémon. As duas primeiras Gerações foram as que mais contribuíram para esse valor, pois foram as que mais adicionaram Pokémon voadores: 19 espécies cada. Em termos de Movimentos, o tipo Voador atualmente abrange 33 deles. No TCG, o tipo Voador está incluído em Colorless. Em inglês, o tipo Voador é chamado de Flying Type.</p>
             </div>
           </div>
         </div>
       </section>
       <section className="section has-background-warning-dark">
-        <div className="container">
+        <div className="container" id="roedores">
           <div className="columns">
             <div className="column my-auto">
               <h2 className="title is-2 has-text-light pb-4">Tipo roedor</h2>
@@ -410,7 +418,7 @@ function App() {
             <div className="column">
               <p className="is-size-3">Menu</p>
               <ul>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Home</a></li>
+                <li className="my-2"><a href="#home" className="has-text-grey-light">Home</a></li>
                 <li className="my-2"><a href="#" className="has-text-grey-light">Contato</a></li>
                 <li className="my-2"><a href="#" className="has-text-grey-light">Documentação</a></li>
                 <li className="my-2"><a href="#" className="has-text-grey-light">Sobre</a></li>
@@ -426,13 +434,13 @@ function App() {
             <div className="column">
               <p className="is-size-3">Tipos de Pokemon</p>
               <ul>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Planta</a></li>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Água</a></li>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Fogo</a></li>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Inseto 1</a></li>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Inseto 2</a></li>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Pássaros</a></li>
-                <li className="my-2"><a href="#" className="has-text-grey-light">Roedores</a></li>
+                <li className="my-2"><a href="#planta" className="has-text-grey-light">Planta</a></li>
+                <li className="my-2"><a href="#fogo" className="has-text-grey-light">Fogo</a></li>
+                <li className="my-2"><a href="#agua" className="has-text-grey-light">Água</a></li>
+                <li className="my-2"><a href="#insetos-1" className="has-text-grey-light">Inseto 1</a></li>
+                <li className="my-2"><a href="#insetos-2" className="has-text-grey-light">Inseto 2</a></li>
+                <li className="my-2"><a href="#passaros" className="has-text-grey-light">Pássaros</a></li>
+                <li className="my-2"><a href="#roedores" className="has-text-grey-light">Roedores</a></li>
               </ul>
             </div>
           </div>
