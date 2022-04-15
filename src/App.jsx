@@ -83,7 +83,7 @@ function App() {
                 <div className="navbar-item">
                   <div className="buttons">
                     <a className="button is-success is-outlined mr-2">
-                      <strong>Inscrever-se</strong>
+                      <strong>Inscreva-se</strong>
                     </a>
                     <a className="button is-light">Entrar</a>
                   </div>
