@@ -65,7 +65,7 @@ function App() {
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
                 <a href="#home" className="navbar-item has-text-grey-light">Home</a>
-                <a href="#" className="navbar-item has-text-grey-light">Documentação</a>
+                <a href="#" className="has-background-black navbar-item has-text-grey-light">Documentação</a>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <a className="navbar-link has-text-light has-background-black">Pokémons</a>
                   <div className="navbar-dropdown">
