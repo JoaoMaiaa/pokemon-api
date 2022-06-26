@@ -54,7 +54,7 @@ function App() {
           <div className="container p-4">
             <div className="navbar-brand">
               <a className="navbar-item" href="#">
-                <img className="img-fluid" src="../assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" />
+                <img className="img-fluid" src="/logo.png" alt="pokemon api" />
               </a>
               <a role="button" onClick={()=>navBurger()} className="ml-auto mr-0 navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -103,7 +103,7 @@ function App() {
               <a href="#" className="mt-5 button is-light">Saiba mais</a>
             </div>
             <div className="column">
-              <img src={foto1} alt="" className="img-pokefire img-fluid" />
+              <img src={foto1} alt="consumo de api do pokemon" className="img-pokefire img-fluid" />
             </div>
           </div>
         </div>
