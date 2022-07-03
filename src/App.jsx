@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from 'react'
 import api from './services/api.js'
-import { Facebook, Instagram, Twitter, Tiktok } from 'react-bootstrap-icons'
+import { Facebook, Instagram, Linkedin } from 'react-bootstrap-icons'
 import foto1 from '../assets/images/foto-1.jpeg'
 import axios from 'axios'
 
@@ -425,10 +425,9 @@ function App() {
               </ul>
               <p className="is-size-3 my-4">Siga-nos</p>
               <ul className="is-flex is-baseline">
-                <li className="mr-2"><a href="#"><i className="has-text-success"><Facebook /></i></a></li>
-                <li className="mx-2"><a href="#"><i className="has-text-success"><Instagram /></i></a></li>
-                <li className="mx-2"><a href="#"><i className="has-text-success"><Twitter /></i></a></li>
-                <li className="mx-2"><a href="#"><i className="has-text-success"><Tiktok /></i></a></li>
+                <li className="mr-2"><a target="_black" href="https://facebook.com/eujoaomaia"><i className="has-text-success"><Facebook /></i></a></li>
+                <li className="mx-2"><a target="_black" href="https://intagram.com/eumaiajoao"><i className="has-text-success"><Instagram /></i></a></li>
+                <li className="mx-2"><a target="_black" href="https://linkedin.com/in/joãomaiaa"><i className="has-text-success"><Linkedin /></i></a></li>                
               </ul>
             </div>
             <div className="column">
